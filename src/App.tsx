@@ -4,6 +4,7 @@ import About from './components/About';
 import ProjectsSection from './components/ProjectsSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { SplineScene } from './components/Spline';
 
 interface Project {
   title: string;
@@ -42,10 +43,11 @@ const projects: Project[] = [
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col">
+    <div className="w-full min-h-screen bg-gray-900 relative overflow-hidden text-white flex flex-col">
       <Header />
       <main className="flex-grow flex flex-col items-center justify-center px-6 md:px-12">
         <Hero />
+        {/* <SplineScene scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode" className="w-full h-[200px]" /> */}
         <About />
         <ProjectsSection projects={projects} />
         <Contact />
