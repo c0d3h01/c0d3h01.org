@@ -43,7 +43,7 @@ const projects: Project[] = [
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-gray-900 relative overflow-hidden text-white flex flex-col">
+    <div className="w-full min-h-screen relative overflow-hidden text-white flex flex-col bg-gradient-to-b from-gray-900 to-gray-800">
       <Header />
       <main className="flex-grow flex flex-col items-center justify-center px-6 md:px-12">
         <Hero />
