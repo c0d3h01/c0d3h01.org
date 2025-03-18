@@ -4,7 +4,7 @@ import About from './components/About';
 import ProjectsSection from './components/ProjectsSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { SplineScene } from './components/Spline';
+// import { SplineScene } from './components/Spline';
 
 interface Project {
   title: string;
