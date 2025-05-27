@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
         <a href="https://x.com/haarshalsawant" className="">
           <FaTwitter size={32} />
         </a>
-        <a href="mailto:c0d3h01@example.com" className="">
+        <a href="mailto:harshalsawant.dev@gmail.com" className="">
           <FaEnvelope size={32} />
         </a>
       </div>
