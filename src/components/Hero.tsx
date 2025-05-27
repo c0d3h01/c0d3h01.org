@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
                     </h1>
 
                     <p className="text-lg text-gray-300 mb-8">
-                        I'm a passionate developer, always exploring and building new technologies
+                        I'm a Computer science stduent doing Bachlors in computer applications, always exploring and building new technologies
                         for our <span className="text-green-400">Green Earth</span>.
                     </p>
 
