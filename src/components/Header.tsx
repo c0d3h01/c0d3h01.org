@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         href="/"
         className="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors duration-200"
       >
-        Harshal Sawant
+        Harshal Sawant ( c0d3h01 )
       </a>
 
       {/* Desktop Navigation */}
