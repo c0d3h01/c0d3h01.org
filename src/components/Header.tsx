@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 // Define navigation items in an array for better maintainability and to reduce repetition
 const navItems = [
   { href: '#about', label: 'About' },
-  { href: '#projects', label: 'Projects' },
+  // { href: '#projects', label: 'Projects' },
   { href: '#contact', label: 'Contact' },
   {
     href: '/resume.pdf',

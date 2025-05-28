@@ -7,7 +7,7 @@ const HERO_CONTENT = {
   descriptionIntro: "I'm a Computer Science student pursuing a Bachelor's in Computer Applications, ",
   descriptionFocus: "always exploring and building new technologies for our ",
   descriptionHighlight: "Green Earth.",
-  ctaText: "View My Work",
+  ctaText: "View My Work (soon...)",
   ctaLink: "#projects",
 };
 
