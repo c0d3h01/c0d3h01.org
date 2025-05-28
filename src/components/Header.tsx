@@ -14,14 +14,6 @@ const navItems = [
   },
 ];
 
-// Define a type for individual navigation items for better type safety
-interface NavItem {
-  href: string;
-  label: string;
-  isButton?: boolean;
-  external?: boolean;
-}
-
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
