@@ -1,24 +1,53 @@
+import React from 'react';
+
+const technicalSkills = [
+  { id: 'cpp', name: 'C / C++' },
+  { id: 'rust', name: 'Rust' },
+  { id: 'python', name: 'Python' },
+  { id: 'nix', name: 'Nix' },
+  { id: 'javascript', name: 'JavaScript' },
+];
+
 const About: React.FC = () => {
-    return (
-      <section id="about" className="py-20 w-full max-w-3xl">
-        <h2 className="text-3xl font-bold mb-6 text-left">About Me</h2>
-        <p className="text-gray-400 leading-relaxed">
-          I am a like to work on softwares with a strong focus on creating high-quality, user-friendly applications, stuffs.
-          My core languages includes <code>C++, Python</code>. I am a continuous learner and always strive to stay
-          up-to-date with the latest technologies and best practices.
-        </p>
-  
-        <div className="mt-6 text-left">
-          <h3 className="text-3xl font-bold mb-3">My Knowing languages</h3>
-          <ul className="flex flex-wrap gap-2">
-            <li className="bg-gray-800 text-yellow-300 px-3 py-1 rounded-lg">C / C++</li>
-            <li className="bg-gray-800 text-yellow-300 px-3 py-1 rounded-lg">Rust</li>
-            <li className="bg-gray-800 text-yellow-300 px-3 py-1 rounded-lg">Python</li>
-            <li className="bg-gray-800 text-yellow-300 px-3 py-1 rounded-lg">nix</li>
-          </ul>
+  const sectionTitleClass = "text-3xl lg:text-4xl font-bold mb-6 text-gray-100";
+  const subHeadingClass = "text-2xl lg:text-3xl font-semibold mb-5 text-gray-100";
+  const paragraphClass = "text-lg text-gray-300 leading-relaxed";
+  const skillTagClass = "bg-gray-700/60 backdrop-blur-sm text-yellow-300 px-4 py-2 rounded-lg text-sm font-medium shadow-md transition-all duration-200 hover:bg-gray-600/70 hover:scale-105 cursor-default";
+
+  return (
+    <section id="about" className="py-16 md:py-20 text-white">
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="max-w-3xl mx-auto md:mx-0 text-center md:text-left">
+          <h2 className={sectionTitleClass}>
+            About Me
+          </h2>
+          <p className={`${paragraphClass} mb-10`}>
+            I am passionate about crafting high-quality, user-friendly software applications.
+            With a strong foundation in core programming languages, I am a dedicated and
+            continuous learner, always eager to explore and master emerging technologies
+            and adopt best practices in this ever-evolving field.
+          </p>
+
+          <div>
+            <h3 className={subHeadingClass}>
+              Technical Skills
+            </h3>
+            {technicalSkills.length > 0 ? (
+              <ul className="flex flex-wrap gap-3 justify-center md:justify-start">
+                {technicalSkills.map((skill) => (
+                  <li key={skill.id} className={skillTagClass}>
+                    {skill.name}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className={paragraphClass}>Skills section coming soon!</p>
+            )}
+          </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default About;
+      </div>
+    </section>
+  );
+};
+
+export default About;
